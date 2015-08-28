@@ -1,0 +1,9 @@
+name = "Hugo Vidhance theme"
+license = "MIT"
+source_repo = "https://github.com/vidhance/hugo-vidhance-theme"
+description = "Base for Vidhance websites for the static site generator Hugo"
+tags = ["blog", "company"]
+
+[author]
+    name = "Jonathan Udd"
+    email = "jonathan.udd@imint.se"
