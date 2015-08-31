@@ -85,6 +85,3 @@ blockquote > p:first-child:after {
 	text-decoration: none;
 	color: #2E3436;
 }
-.news-header {
-		text-transform: capitalize;
-}
