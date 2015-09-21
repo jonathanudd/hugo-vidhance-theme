@@ -1,0 +1,7 @@
+BaseURL: "http://hugo-vidhance-theme.com"
+languageCode: "en-us"
+title: "Hugo Vidhance Theme"
+blackfriday:
+  extensions:
+    - hardLineBreak
+MetaDataFormat: "yaml"
