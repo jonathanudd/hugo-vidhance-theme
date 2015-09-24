@@ -29,7 +29,6 @@
 #nav ul {
 	padding: 0em 1em;
 	margin: 0 auto;
-	overflow: hidden;
 	max-width: 50em;
 }
 #nav ul ul,
@@ -54,10 +53,6 @@ nav > div > ul > li {
 	background: none;
 	display: block;
 	text-decoration: none;
-}
-#nav ul ul ul {
-	margin-top: -1.2em;
-	left: 99%;
 }
 #nav ul span {
 	display: block;
@@ -196,6 +191,14 @@ backg	round-image: url("../img/close-btn.png");
 	}
 	#nav {
 		display: block;
+	}
+	#nav ul ul ul {
+		margin-top: -28%;
+		left: 102%;
+	}
+	#nav ul ul ul ul {
+		margin-top: -16.5%;
+		left: 101%;
 	}
 }
 @media screen and (max-width: 51.99em) {
