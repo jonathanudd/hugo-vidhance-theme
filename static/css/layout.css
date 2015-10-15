@@ -182,6 +182,15 @@ article.news-post figure.boxedimg {
 	width: 220px;
 	margin: auto;
 }
+body > main > section > article > main > p > img {
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #F3F3F2;
+	padding: 0.5em;
+	border: 1px solid #CCC;
+	display: block;
+	max-width: 80%;
+}
 @media only screen and (min-width: 52em) {
 	body > main > section > article.graphic {
 		text-align: center;
@@ -227,5 +236,10 @@ article.news-post figure.boxedimg {
 	article.news-post figure.boxedimg {
 		float: right;
 		margin: 0.5em 0em 0.5em 0.5em
+	}
+	body > main > section > article > main > p > img {
+		float: right;
+		max-width: 50%;
+		margin: 1.5em;
 	}
 }
