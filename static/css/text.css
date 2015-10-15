@@ -65,7 +65,7 @@ cite {
 	float: right;
 	margin-right: 40px;
 }
-blockquote > *:not(cite){
+blockquote > p > *:not(cite){
 	font-style: italic;
 	font-weight: 400;
 	color: #a73e10;
@@ -76,6 +76,10 @@ blockquote > p:first-child:before {
 }
 blockquote > p:first-child:after {
 	content: "\201d";
+	color: #a73e10;
+}
+blockquote {
+	margin-bottom: 2em;
 }
 .no-decoration,
 .no-decoration:link,
