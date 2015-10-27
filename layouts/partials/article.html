@@ -1,14 +1,17 @@
-<article
-			{{ if or (isset .Params "image") (isset .Params "video") }}
-				{{ if .Content }}
-					class="graphic"
-				{{ else }}
-					class="onlygraphic"
-				{{ end }}
-			{{ end }}
-			{{ if isset .Params "background" }}
-				style="background-image: url({{ .RelPermalink }}{{ .Params.background }})"
-			{{ end }}>
+<article class="
+	{{ if or (isset .Params "image") (isset .Params "video") }}
+		{{ if isset .Params "beforeafter" }}
+			video
+		{{ end }}
+		{{ if .Content }}
+			graphic
+		{{ else }}
+			onlygraphic
+		{{ end }}
+	{{ end }}"
+	{{ if isset .Params "background" }}
+		style="background-image: url({{ .RelPermalink }}{{ .Params.background }})"
+	{{ end }}>
 	<header><h1>{{ .Title }}</h1></header>
 	{{ if isset .Params "image" }}
 		<figure>
@@ -16,10 +19,14 @@
 		</figure>
 	{{ end }}
 	{{ if isset .Params "video" }}
-		<video poster="{{ .RelPermalink }}{{ .Params.poster }}" controls="">
+		<video poster="{{ .RelPermalink }}{{ .Params.poster }}"  autoplay loop muted>
 			<source src="{{ .RelPermalink }}{{ .Params.video }}" type="video/mp4">
 				Your browser does not support the video tag.
 		</video>
+		{{ if isset .Params "beforeafter" }}
+			<h5>without Vidhance</h5>
+			<h5>with Vidhance</h5>
+		{{ end }}
 	{{ end }}
 	<main>
 		{{ if eq .Type "quote" }}
