@@ -261,7 +261,7 @@ article.video > h5:last-of-type {
 	body > main > section > article > main > p > img {
 		float: right;
 		max-width: 50%;
-		margin: 1.5em;
+		margin: 0 1.5em;
 	}
 	article.video video {
 		max-width: 52em;
