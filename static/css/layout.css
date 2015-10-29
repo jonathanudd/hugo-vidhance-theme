@@ -72,7 +72,6 @@ body > main > section > article > header {
 	text-align: center;
 }
 body > main > section > article > video {
-	width: 100%;
 	height: auto;
 }
 body > main > section > article > figure,
@@ -194,6 +193,9 @@ body > main > section > article > main > p > img {
 article.video {
 	position: relative;
 	color: white;
+	padding-left: 0;
+	padding-right: 0;
+	max-width: 52em;
 }
 article.video video {
 	max-width: 100%;
