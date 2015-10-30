@@ -65,7 +65,7 @@ cite {
 	float: right;
 	margin-right: 40px;
 }
-blockquote > p > *:not(cite){
+blockquote *:not(cite){
 	font-style: italic;
 	font-weight: 400;
 	color: #a73e10;
