@@ -101,7 +101,7 @@ article.onlygraphic, article.entrypoints {
 }
 article.onlygraphic > video,
 article.onlygraphic > figure {
-	max-width: 50em;
+	max-width: 100%;
 }
 body > main > section > article > main > iframe {
 	width: 100%;
